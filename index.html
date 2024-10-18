@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloxNet - Noticias de Tecnología</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BloxNet</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="toggleSection('noticias')">Noticias</a></li>
+                <li><a href="#" onclick="toggleSection('resenas')">Reseñas</a></li>
+                <li><a href="#" onclick="toggleSection('tendencias')">Tendencias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formulario-imagen" class="seccion">
+            <h2>Agregar Imagen</h2>
+            <input type="file" id="imagen-input" accept="image/*">
+            <button onclick="agregarImagen()">Agregar Imagen</button>
+        </section>
+
+        <section id="noticias" class="seccion" style="display: none;">
+            <h2>Noticias</h2>
+            <button onclick="toggleEdit('noticias')">Editar</button>
+            <div id="noticias-imagenes"></div>
+            <article contenteditable="true" class="editable">
+                <h3>Nueva IA de OpenAI</h3>
+                <p>OpenAI lanza una nueva versión de GPT-4 con capacidades mejoradas.</p>
+            </article>
+            <article contenteditable="true" class="editable">
+                <h3>Google anuncia Pixel 9</h3>
+                <p>El nuevo Pixel viene con mejoras en cámara y rendimiento.</p>
+            </article>
+        </section>
+
+        <section id="resenas" class="seccion" style="display: none;">
+            <h2>Reseñas</h2>
+            <button onclick="toggleEdit('resenas')">Editar</button>
+            <div id="resenas-imagenes"></div>
+            <article contenteditable="true" class="editable">
+                <h3>Reseña del iPhone 15</h3>
+                <p>El iPhone 15 trae mejoras en la cámara y duración de batería.</p>
+            </article>
+        </section>
+
+        <section id="tendencias" class="seccion" style="display: none;">
+            <h2>Tendencias</h2>
+            <button onclick="toggleEdit('tendencias')">Editar</button>
+            <div id="tendencias-imagenes"></div>
+            <article contenteditable="true" class="editable">
+                <h3>Tendencias en IA 2024</h3>
+                <p>Explora cómo la inteligencia artificial está cambiando industrias.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BloxNet. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

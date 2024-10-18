@@ -1,0 +1,52 @@
+/* ...el resto de tu CSS... */
+
+/* Aplicar la nueva fuente a todo el cuerpo */
+body {
+    font-family: 'Roboto', sans-serif; /* Usar la fuente Roboto */
+    background-color: #f5f5f5; /* Color de fondo suave para toda la página */
+    color: #333; /* Color de texto oscuro */
+}
+
+/* Estilos para el header */
+header {
+    background-color: #4CAF50; /* Color de fondo del header */
+    padding: 20px; /* Espaciado interior */
+}
+
+/* Estilos para la navegación */
+nav ul {
+    list-style: none; /* Quitar los puntos de la lista */
+    padding: 0; /* Quitar el padding */
+    display: flex; /* Disposición en línea */
+    justify-content: space-around; /* Espacio entre los elementos */
+}
+
+/* Estilo de enlaces */
+nav a {
+    color: white;
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 15px; /* Espacio horizontal entre enlaces */
+}
+
+/* Estilo para las secciones */
+.seccion {
+    margin: 20px 0; /* Margen superior e inferior */
+    padding: 15px; /* Espaciado interior */
+    background-color: #fff; /* Color de fondo blanco */
+}
+
+/* Estilo para artículos editables */
+.editable {
+    outline: none; /* Quitar borde predeterminado */
+    padding: 10px; /* Espaciado interior */
+    transition: background-color 0.3s; /* Suave cambio de fondo al editar */
+}
+
+.editable:focus {
+    background-color: #eef; /* Color de fondo claro al hacer foco en el área editable */
+}
+
+/* Agregar un efecto de sombra a las secciones */
+.seccion:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra al pasar el mouse */
+}
